@@ -1,0 +1,38 @@
+<section id="booking-form" novalidate>
+    <h2 class="text-center my-5">Formulir
+        <div class="line"></div>
+    </h2>
+    <form class="row g-3" [formGroup]="bookingGroup" (ngSubmit)="onSubmitReservation()">
+        <div class="col-md-12">
+            <label for="validationCustom01" class="form-label">Nama Tamu</label>
+            <input type="text" class="form-control" id="validationCustom01" formControlName="{{ field.NAME }}" [readonly]="bookingGroup.value.id" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationServer02" class="form-label">Email Tamu</label>
+            <input type="text" class="form-control isValid" id="validationServer02" formControlName="{{ field.EMAIL }}" [readonly]="bookingGroup.value.id" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationServer03" class="form-label">No Handphone Tamu</label>
+            <input type="text" class="form-control isValid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" formControlName="{{ field.PHONE }}" [readonly]="bookingGroup.value.id" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServer03" class="form-label">Nomor Kamar</label>
+            <input type="number" class="form-control isValid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" formControlName="{{ field.ROOM_NUMBER }}" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServer03" class="form-label">Lama Menginap</label>
+            <input type="number" class="form-control isValid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" formControlName="{{ field.DURATION }}" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServer03" class="form-label">Jumlah Tamu</label>
+            <input type="number" class="form-control isValid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" formControlName="{{ field.GUEST_COUNT }}" [readonly]="bookingGroup.value.id" required>
+        </div>
+        <div class="col-12">
+            <button class="btn" type="submit">Book</button>
+        </div>
+    </form>
+</section>

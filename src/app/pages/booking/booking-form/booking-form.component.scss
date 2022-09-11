@@ -1,0 +1,17 @@
+section {
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.btn {
+  background-color: #FFD93D;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  border: 2px solid #fbce18;
+  background-color: #fbce18;
+  border-radius: 50px;
+}

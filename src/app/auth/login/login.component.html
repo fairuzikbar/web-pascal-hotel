@@ -1,0 +1,56 @@
+<section id="login" class="login">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-title">
+              <h3>Login</h3>
+            </div>
+            <div class="card-body">
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    formControlName="email"
+                  />
+                  <label for="floatingInput">Email address</label>
+                  <app-validation-message
+                    [control]="loginForm.get(loginField.EMAIL)"
+                    [field]="loginField.EMAIL"
+                  ></app-validation-message>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    formControlName="password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                  <app-validation-message
+                    [control]="loginForm.get(loginField.PASSWORD)"
+                    [field]="loginField.PASSWORD"
+                  ></app-validation-message>
+                </div>
+                <div class="d-grid gap-2 btn-login">
+                  <button class="btn" type="submit">
+                    LOGIN
+                  </button>
+                  <div class="btn-login-footer">
+                    <p>
+                      Not a member?
+                      <a class="btn-login-register" routerLink="/auth/register">Register</a>
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,100 @@
+.facilities {
+  padding-bottom: 4rem;
+}
+
+.facilities h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.facilities h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 4rem;
+}
+
+.facilities p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.facilities-card {
+  background-color: #FFD93D;
+  border-style: none;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+  
+.bi {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.facilities-content h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card-body-culinary {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 217, 61, 0.3)), url('/assets/image/culinary.jpg');
+  background-size: cover;
+}
+
+.card-body-relax {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 217, 61, 0.3)), url('/assets/image/relax.jpg');
+  background-size: cover;
+}
+
+.card-body-club {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 217, 61, 0.3)), url('/assets/image/club.jpg');
+  background-size: cover;
+}
+
+.card-body-klub {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 217, 61, 0.3)), url('/assets/image/klub.jpg');
+  background-size: cover;
+}
+
+.card-body-sport {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 217, 61, 0.3)), url('/assets/image/sport.jpg');
+  background-size: cover;
+}
+
+.pleasure-content {
+  height: 400px;
+}
+
+.experience-content {
+  height: 200px;
+}
+
+.pleasure-content-text {
+  background-color: #FFD93D;
+  margin-top: 150px
+}
+
+.experience-content-text {
+  background-color: #FFD93D;
+  margin-top: 65px
+}
+
+.btn {
+  background-color: #FFD93D;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  border: 2px solid #fbce18;
+  background-color: #fbce18;
+  color: #000;
+  border-radius: 50px;
+}

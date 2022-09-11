@@ -1,0 +1,37 @@
+.service {
+  padding-bottom: 4rem;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.service-card {
+  background-color: #FFD93D;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 2.5rem 1.3rem;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+  
+.bi {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.service-content h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}

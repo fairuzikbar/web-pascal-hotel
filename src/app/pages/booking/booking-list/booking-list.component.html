@@ -1,0 +1,38 @@
+<section id="booking-list">
+  <h2 class="text-center my-5">Daftar Pengunjung
+    <div class="line"></div>
+</h2>
+  <button class="btn" routerLink="/booking/form">Booking Form</button>
+    <table class="table caption-top">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">BookingID</th>
+            <th scope="col" class="text-center">Nama Pemesan</th>
+            <th scope="col" class="text-center">Nomor Kamar</th>
+            <th scope="col" class="text-center">Durasi Menginap</th>
+            <th scope="col" class="text-center">Total Biaya</th>
+            <th scope="col" class="text-center">Jumlah Tamu</th>
+            <th scope="col" class="text-center">Status Pemesanan</th>
+            <th scope="col" class="text-center">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <th scope="row" class="text-center">{{ book.id }}</th>
+            <td scope="row" >{{ book.reservee.name }}</td>
+            <td scope="row" class="text-center">{{ book.roomNumber }}</td>
+            <td scope="row" class="text-center">{{ book.duration }} malam</td>
+            <td scope="row" class="text-center">{{ book.duration * fee }} IDR</td>
+            <td scope="row" class="text-center">{{ book.guestCount }}</td>
+            <td scope="row" class="text-center">{{ book.status }}</td>
+            <td>
+              <button class="btn" (click)="onCheckIn(book.id)">CheckIn</button>&nbsp;
+              <button class="btn" (click)="onCheckOut(book.id)">CheckOut</button>&nbsp;
+              <button class="btn" (click)="onReserve(book)">Edit</button>&nbsp;
+              <button class="btn" (click)="onDeleteReservation(book.id)">Delete</button>
+            </td>
+          </tr>
+          <p class="book-list" *ngIf="!books || (books && books.length === 0)">Tidak ada data booking</p>
+        </tbody>
+      </table>
+</section>
